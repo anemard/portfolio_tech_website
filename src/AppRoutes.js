@@ -16,7 +16,7 @@ function AppRoutes() {
             <Projects />
           </>
         } />
-        <Route path='/wormseye' element={<Wormseye />} />
+        <Route path='/wormseye' element={<><Wormseye /><Projects /></>} />
       </Routes>
     </div>
   );

@@ -4,14 +4,7 @@ body {
 }
 
 body {
-    /* ORANGE BLACK */
     background-color: rgb(34, 28, 13);
-    /* BLUE BLACK */
-    /* background-color: rgb(18, 22, 28); */
-    /* GREEN BLACK */
-    /* background-color: rgb(27, 30, 20); */
-
-
 }
 
 h1, h3 {
@@ -32,6 +25,13 @@ p {
 p a {
     color: rgb(233, 232, 229);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.component-title {
+    color: rgb(233, 232, 229);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 .landing {
@@ -84,6 +84,8 @@ p a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding-left:0
 }
 
 .skills-list-item {
@@ -93,6 +95,7 @@ p a {
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(233, 232, 229);
+    padding-left:0
 }
 
 .icon-name {
@@ -123,6 +126,7 @@ p a {
     list-style: none;
     color: rgb(233, 232, 229);
     font-family: Arial, Helvetica, sans-serif;
+    padding-left:0
 }
 
 .projects-list-item {
@@ -132,3 +136,111 @@ p a {
 .projects-list-item a {
     color:rgb(233, 232, 229);
 }
+
+.projects-title {
+    font-size: 80px;
+    color: rgb(233, 232, 229);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+/* WORMS EYE VIEW */
+
+.wormseye-container {
+    display: flex;
+    justify-content: center;
+}
+
+.wormseye-container-content {
+    margin: 2vw;
+    padding: 1vh 3vw;
+    width: 79.75vw;
+}
+
+@media only screen and (min-width: 841px) and (max-width: 1060px) {
+
+h1 {
+    font-size: 60px;
+}
+
+.projects-title {
+    color: rgb(233, 232, 229);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+
+}
+
+@media only screen and (max-width: 840px) {
+    /* body {
+      background-color: lightblue;
+    } */
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* INTRO */
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3vw;
+        padding: 0vh 3vw;
+        width: 90vw;
+        height: 85vh;
+    }
+
+    /* ABOUT */
+    .about-container {
+        border: 1px solid rgb(233, 232, 229);
+        margin: 3vh 1vw;
+        padding: 1vh 3vw;
+        width: 88vw;
+        height: 100%;
+    }
+
+    /* EXPERIENCE */
+    .experience-container {
+        border: 1px solid rgb(233, 232, 229);
+        margin: 3vh 1vw;
+        padding: 1vh 3vw;
+        width: 88vw;
+        height: 100%;
+    }
+
+    /* SKILLS */
+    .skills-container {
+        border: 1px solid rgb(233, 232, 229);
+        margin: 3vh 1vw;
+        padding: 1vh 3vw;
+        width: 88vw;
+        height: 100%;
+    }
+
+    .projects-container-content {
+        border: 1px solid rgb(233, 232, 229);
+        margin: 0vh 1vw 2vh 1vw;
+        padding: 1vh 3vw 0vh 3vw;
+        width: 88vw;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .projects-title {
+        color: rgb(233, 232, 229);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+  }

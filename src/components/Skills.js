@@ -4,7 +4,7 @@ function Skills() {
 
     return (
       <div className='skills-container'>
-        <h3>SKILLS</h3>
+        <span className="component-title">SKILLS</span>
         <ul class='skills-list'>
             <li class='skills-list-item'>
                 <i class="fab fa-js-square fa-3x fa-inverse"></i>

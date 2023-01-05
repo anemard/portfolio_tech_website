@@ -4,9 +4,9 @@ function Experience() {
 
     return (
       <div className='experience-container'>
-        <h3>EXPERIENCE</h3>
+        <span className="component-title">EXPERIENCE</span>
         <p>
-          I have experience in a variety of roles in my career: from the Associate Director of ltd los angeles, to Artist Assistant for an LA-base artist, to Content Manager at CES Gallery. My goal is to integrate my knowledge of art/design with user experience and with my experience in innovative and problem-solving skills to my programming. I am currently working freelance as a web designer.</p>
+          Emard has experience in a variety of roles throughout their career: from the Associate Director of ltd los angeles, to Artist Assistant for an LA-base artist, to Content Manager at CES Gallery. Their goal is to integrate their knowledge of art/design with user experience while integrating their innovative and problem-solving skills to programming. Emard is currently working freelance as a Web Developer and Designer.</p>
       </div>
     )
 }

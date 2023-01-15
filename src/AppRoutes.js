@@ -17,6 +17,15 @@ function AppRoutes() {
           </>
         } />
         <Route path='/wormseye' element={<><Wormseye /><Projects /></>} />
+        <Route path="*" element={
+          <>
+            <div className='landing'>
+              <Intro />
+              <div><About /><Experience /><Skills /></div>
+            </div>
+            <Projects />
+          </>
+        } />
       </Routes>
     </div>
   );

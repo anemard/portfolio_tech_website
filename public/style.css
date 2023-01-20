@@ -27,6 +27,10 @@ p a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+    border-radius: 2px;
+}
+
 .component-title {
     color: rgb(233, 232, 229);
     font-family: 'Poppins', sans-serif;
@@ -115,14 +119,14 @@ p a {
     width: 79.75vw;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .projects-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     list-style: none;
     color: rgb(233, 232, 229);
     font-family: Arial, Helvetica, sans-serif;
@@ -155,6 +159,62 @@ p a {
     margin: 2vw;
     padding: 1vh 3vw;
     width: 79.75vw;
+}
+
+.WormsEye-Role-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.WormsEye-Role {
+    width: 35vw;
+    border: 1px solid white;
+    padding: 3vh 3vw 3vh 3vw;
+    margin: 2vh 0vw 10vh 0vw;
+}
+
+.LandingPagePic {
+    width: 75vw;
+}
+
+.Project-Images {
+
+    margin: 0vh 0vw 10vh 0vw;
+}
+
+.projects-top-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0vh 0vw 7vh 0vw;
+}
+
+.projects-about {
+    margin: 3vw 3vw 3vw 5vw;
+    padding: 3vh 3vw 3vh 3vw;
+    width: 50vw;
+    border: white solid 1px;
+}
+
+/* CHALLANGE COMPONENT */
+
+.challenge-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.challenge-styling {
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    margin: 1em 0;
+    padding: 1em
 }
 
 @media only screen and (min-width: 841px) and (max-width: 1060px) {
@@ -243,4 +303,39 @@ h1 {
         font-size: 20px;
     }
 
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        color: rgb(233, 232, 229);
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left:0
+    }
+
+    .projects-top-content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-about {
+        margin: 0vh 1vw 2vh 1vw;
+        padding: 1vh 3vw 0vh 3vw;
+        width: 100%;
+        border: white solid 1px;
+    }
+
+    .WormsEye-Role {
+        margin: 1vh 1vw;
+        padding: 1vh 3vw;
+        width: 100%;
+        border: white solid 1px;
+    }
+
+    .Project-Images {
+        width: 99vw;
+        margin: 3vh 0vw;
+        padding: 0;
+    }
   }

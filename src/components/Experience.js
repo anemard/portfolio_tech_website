@@ -6,7 +6,10 @@ function Experience() {
       <div className='experience-container'>
         <span className="component-title">EXPERIENCE</span>
         <p>
-          Emard has experience in a variety of roles throughout their career: from Associate Director of ltd los angeles, to Artist Assistant for several LA-based artists, to Digital Content Manager at CES Gallery. Their goal is to integrate their knowledge of art/design towards building thoughtful UX Design and to continue to grow as a Developer and Designer. Emard strives to build transparent and accessible platforms through efficient code and thoughtful UX design. Emard is currently working freelance as a Web Developer and Designer.</p>
+          I am a graduate of Fullstack Academy's Web Development program, a premier coding bootcamp. I also hold an MFA in Visual Arts from Northwestern University and a BA in Art and Architecture from Bennington College.
+        </p>
+        <p>
+          I have experience in a variety of roles throughout my career: from Associate Director of ltd los angeles, to Digital Content Manager at CES Gallery. These experiences taught me how to work well with a team, project management skills, and how to think outside of the box. I am currently working as a freelance Web Developer and Designer.</p>
       </div>
     )
 }

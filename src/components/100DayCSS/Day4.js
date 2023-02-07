@@ -5,8 +5,8 @@ function Day4() {
 
     return (
       <div>
-        <div class="frame">
-            <div class="center">
+        <div class="frame4">
+            <div class="center4">
                 <div id="bigCircle"></div>
                 <div id="midCircle"></div>
                 <div id="smCircle"></div>

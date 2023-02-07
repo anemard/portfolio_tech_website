@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame6 {
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  width: 400px;
+  height: 400px;
+  /* margin-top: -200px;
+  margin-left: -200px; */
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: yellow;
+	background-image: linear-gradient(to bottom left, #bf8336, #f7be5c);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box {
+	width: 325px;
+	height: 300px;
+	background: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 4px 8px 16px 0 #996726;
+}
+
+.profile {
+	width:224px;
+	height: 319px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-image {
+	width: 100px; 
+	height: 100px;
+	border-radius: 50px;
+  z-index: 100;
+}
+
+.semi-circle-1 {
+  position: absolute;
+  height: 108px;
+  width: 108px;
+  border-radius: 50%;
+  border : 1px solid #786450;
+  top: 44px;
+  left: 57px;
+  border-right: 1px solid transparent;
+  transform: rotate(0deg);
+  transition: 1.5s;
+}
+
+.semi-circle-2 {
+  position: absolute;
+  height: 114px;
+  width: 114px;
+  border-radius: 50%;
+  border : 1px solid #786450;
+  top: 41px;
+  left: 54px;
+  border-right: 1px solid transparent;
+  transform: rotate(180deg);
+  transition: all 1.5s ease-in-out;
+}
+
+/* .semi-circles:hover {
+	cursor: pointer;
+	
+	.semi-circle-2 {
+		transform: rotate(540deg);
+	};
+	
+	.semi-circle-1 {
+		transform: rotate(-360deg);
+	};
+	
+} */
+
+.semi-circles:hover > .semi-circle-2 {
+	cursor: pointer;
+	transform: rotate(540deg);
+}
+
+.semi-circles:hover > .semi-circle-1 {
+	cursor: pointer;
+	transform: rotate(-360deg);
+}
+
+#name {
+	margin: 15px 0px 0px 0px;
+    color: #755e3f;
+}
+
+#bio {
+	margin: 0px 0px 15px 0px;
+    color: #755e3f;
+}
+
+button {
+	width: 100px;
+	height: 24px;
+	margin: 0 0 5px 0 ;
+	background: white;
+	border: 1px solid #755e3f;
+	color: #755e3f;
+	border-radius: 12px;
+	font-size: 12px;
+}
+
+button:hover {
+	cursor: pointer;
+	background: #755e3f;
+	color: white;
+}
+
+.userInfoDiv{
+	width:100px;
+	height: 99.25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 0px 1px 1px;
+	background: #faeee3;
+}
+
+.userInfoDiv:hover {
+	background: #f0ddcc;
+	cursor: pointer;
+}
+
+#top-right {
+	border-radius: 0px 10px 0px 0px;
+}
+
+#bottom-right {
+	border-radius: 0px 0px 10px 0px;
+}
+
+.subtitle {
+	font-size: 10px;
+	margin: 0px;
+    color: #755e3f;
+}
+
+.userInfo {
+	margin: 0px;
+    color: #755e3f;
+}
+

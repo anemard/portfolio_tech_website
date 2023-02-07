@@ -206,6 +206,11 @@ img {
     flex-wrap: wrap;
 }
 
+.challenge-card {
+    padding: 10px;
+}
+
+
 .challenge-styling {
     height: 300px;
     box-sizing: border-box;

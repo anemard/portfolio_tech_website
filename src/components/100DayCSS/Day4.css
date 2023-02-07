@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  width: 400px;
+  height: 400px;
+  /* margin-top: -200px;
+  margin-left: -200px; */
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #FA8072;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes circleScale-big {
+	0% {transform: scale(0)}
+	70% {transform: scale(1)}
+	100% {transform: scale(1)}
+}
+
+@keyframes circleScale-mid {
+	0% {transform: scale(0)}
+	30%{transform: scale(0)}
+	80% {transform: scale(1)}
+	100% {transform: scale(1)}
+}
+
+@keyframes circleScale-sm {
+	0% {transform: scale(0)}
+	50% {transform: scale(0)}
+	90% {transform: scale(1)}
+	100% {transform: scale(1)}
+}
+
+#bigCircle {
+	width: 120px;
+	height: 120px;
+	background: white;
+	border-radius: 60px;
+	filter: drop-shadow(.25rem .25rem 0.55rem #a1a1a1);
+	position: absolute;
+	bottom: -60px;
+	right: -60px;
+	
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+  animation-name: circleScale-big;
+  animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+
+#midCircle {
+	width: 80px;
+	height: 80px;
+	background: white;
+	border-radius: 40px;
+	filter: drop-shadow(.25rem .25rem 0.45rem #a1a1a1);
+	position: absolute;
+	bottom: -40px;
+	right: -40px;
+	
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+  animation-name: circleScale-mid;
+  animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}
+
+#smCircle {
+	width: 40px;
+	height: 40px;
+	background: white;
+	border-radius: 20px;
+	filter: drop-shadow(.25rem .25rem 0.35rem #a1a1a1);
+	position: absolute;
+	bottom: -20px;
+	right: -20px;
+	
+	animation-duration: 2.5s;
+	animation-delay: 0s;
+  animation-name: circleScale-sm;
+  animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+}

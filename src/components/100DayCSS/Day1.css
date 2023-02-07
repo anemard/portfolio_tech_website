@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame1 {
+  position: relative;
+  /* top: 0%;
+  left: 0%; */
+  width: 400px;
+  height: 400px;
+  /* margin-top: -200px;
+  margin-left: -200px; */
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: blue;
+	background-image: linear-gradient(to bottom left, #0ac8d3, #673dcd);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hundy {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#one {
+	height: 100px;
+	width: 25px;
+	background-color: white;
+	filter: drop-shadow(0 0 0.25rem gray);
+	position: relative;
+	right: 195px;
+  bottom: 0px;
+	border-radius: 3px;
+}
+
+#one-top {
+	height: 40px;
+	width: 25px;
+	background-color: white;
+	position: relative;
+	left: 15px;
+  bottom: 28px;
+	border-radius: 3px;
+	filter: drop-shadow(0 0 0.25rem gray);
+	transform: rotate(45deg)
+}
+
+#zero-one {
+	height: 50px;
+	width: 50px;
+	position: relative;
+	right: 80px;
+  bottom: 0px;
+	border: white solid 25px;
+	border-radius: 70px;
+	filter: drop-shadow(0 0 0.25rem gray);
+}
+
+#zero-two {
+	height: 50px;
+	width: 50px;
+  position: relative;
+	left: 100px;
+  bottom: 0px;
+	border: white solid 25px;
+	border-radius: 70px;
+	filter: drop-shadow(0 0 0.25rem gray);
+}
+
+.textbox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	color: white;
+	font-family: courier;
+	padding: 0px;
+	margin: 0px;
+}
+
+#days {
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#challenge-text {
+	font-size: 24px;
+}

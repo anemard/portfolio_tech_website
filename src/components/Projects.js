@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import WormsEyeViewPic from '../imgs/WormsEyeView.jpg'
-import TreeHousePic from '../imgs/TreeHouseGoods.jpg'
+import WormsEyeViewPic from '../imgs/WormsEye-1-lg.jpg'
+import clk from '../imgs/clk-1.jpg'
+import THG from '../imgs/THG-landing.jpg'
 
 function Projects() {
 
@@ -9,10 +10,18 @@ function Projects() {
       <div className='projects-container'>
         <div className='projects-container-content'>
           <span className='projects-title'>PROJECTS</span>
-          <ul className='projects-list'>
-              <li className='projects-list-item'><Link to='wormseye'><img src={WormsEyeViewPic} width="300vw" /></Link></li>
-              <li className='projects-list-item'><a href="https://github.com/TeamA-Graceshopper-2022/treehousegoods" target="_blank"><img src={TreeHousePic} width="300vw" /></a></li>
-          </ul>
+
+          <div className='projects-list'>
+            <div className='projects-list-item'>
+              <Link to='clk'><img src={clk} className='proj-img' /></Link>
+            </div>
+            <div className='projects-list-item'>
+              <Link to='wormseye'><img src={WormsEyeViewPic} className='proj-img' /></Link>
+            </div>
+            <div className='projects-list-item'>
+              <Link to='treehouse'><img src={THG} className='proj-img'/></Link>
+            </div>
+          </div>
         </div>
       </div>
     )

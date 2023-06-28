@@ -8,7 +8,7 @@ function Intro() {
         <h1>AN EMARD</h1>
         <p>👋🏻 I am a Web Developer/Designer and Visual Artist.</p>
         <p>I currently reside in Chicago, IL. <Link to='location'>
-            <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+            <i className="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
           </Link></p>
 
 

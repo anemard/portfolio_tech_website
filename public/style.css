@@ -125,8 +125,9 @@ img {
 
 .projects-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     color: rgb(233, 232, 229);
     font-family: Arial, Helvetica, sans-serif;
@@ -134,7 +135,7 @@ img {
 }
 
 .projects-list-item {
-    padding: .5vw 0vw;
+    padding: 1vw 0vw;
 }
 
 .projects-list-item a {
@@ -146,6 +147,50 @@ img {
     color: rgb(233, 232, 229);
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
+}
+
+.project-container {
+    position: relative;
+    width: 50%;
+}
+  
+.proj-img {
+    opacity: 1;
+    display: block;
+    width: 75vw;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.proj-img:hover {
+    cursor: pointer;
+}
+
+.proj-desc {
+    background-color: white;
+    color: rgb(34, 28, 13);
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.project-container:hover .image {
+    opacity: 0.3;
+}
+  
+.project-container:hover .middle {
+    opacity: 1;
 }
 
 /* WORMS EYE VIEW */
@@ -167,33 +212,37 @@ img {
     align-items: center;
     justify-content: space-between;
 }
+
 .WormsEye-Role {
-    width: 35vw;
+    width: 60vw;
     border: 1px solid white;
     padding: 3vh 3vw 3vh 3vw;
-    margin: 2vh 0vw 10vh 0vw;
+    margin: 3vh 3vw 3vh 3vw;
 }
 
-.LandingPagePic {
-    width: 75vw;
+.Project-Page-Img {
+    width: 66vw;
+    padding: 3vw;
 }
 
 .Project-Images {
-
     margin: 0vh 0vw 10vh 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-top-content-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin: 0vh 0vw 7vh 0vw;
+    margin: 0vh 0vw 3vh 0vw;
 }
 
 .projects-about {
-    margin: 3vw 3vw 3vw 5vw;
+    margin: 3vw 3vw 3vw 3vw;
     padding: 3vh 3vw 3vh 3vw;
-    width: 50vw;
+    width: 60vw;
     border: white solid 1px;
 }
 
@@ -210,7 +259,6 @@ img {
     padding: 10px;
 }
 
-
 .challenge-styling {
     height: 300px;
     box-sizing: border-box;
@@ -220,6 +268,11 @@ img {
     border: 2px solid;
     margin: 1em 0;
     padding: 1em
+}
+
+.location-map {
+    width: 60vw;
+    height: 60vh;
 }
 
 @media only screen and (min-width: 841px) and (max-width: 1060px) {
@@ -309,7 +362,7 @@ h1 {
     }
 
     .projects-list {
-        display: flex;
+        display: grid;
         flex-direction: column;
         justify-content: center;
         align-items: center;

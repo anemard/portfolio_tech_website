@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Experience, Intro, Projects, Skills, Wormseye, Challenge, Challenges, Location } from './components';
+import { About, Experience, Intro, Projects, Skills, Wormseye, TreeHouseGoods, Clk, Location } from './components';
 import { Route, Routes } from 'react-router-dom';
 
 function AppRoutes() {
@@ -14,11 +14,11 @@ function AppRoutes() {
               <div><About /><Experience /><Skills /></div>
             </div>
             <Projects />
-            <Challenges />
           </>
         } />
         <Route path='/wormseye' element={<><Wormseye /><Projects /></>} />
-        <Route path='/challenge' element={<><Challenge /><Projects /></>} />
+        <Route path='/treehouse' element={<><TreeHouseGoods /><Projects /></>} />
+        <Route path='/clk' element={<><Clk /><Projects /></>} />
         <Route path='/location' element={<Location />} />
         <Route path="*" element={
           <>
@@ -27,7 +27,6 @@ function AppRoutes() {
               <div><About /><Experience /><Skills /></div>
             </div>
             <Projects />
-            <Challenges />
           </>
         } />
       </Routes>

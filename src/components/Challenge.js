@@ -8,7 +8,7 @@ function Challenge() {
       <>
       <div className='wormseye-container'>
           <div className='wormseye-container-content'>
-              <Link to="/"><i class="fa-sharp fa-solid fa-arrow-left fa-3x fa-inverse"></i></Link>
+              <Link to="/"><i className="fa-sharp fa-solid fa-arrow-left fa-3x fa-inverse"></i></Link>
               <h1>100 Day CSS Challenge</h1>
               <div className='challenge-cards'>
                 <div className='challenge-card'><Day1 /></div>

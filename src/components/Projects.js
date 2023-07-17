@@ -13,13 +13,13 @@ function Projects() {
 
           <div className='projects-list'>
             <div className='projects-list-item'>
-              <Link to='clk'><img src={clk} className='proj-img' /></Link>
+              <Link to='/clk'><img src={clk} className='proj-img' /></Link>
             </div>
             <div className='projects-list-item'>
-              <Link to='wormseye'><img src={WormsEyeViewPic} className='proj-img' /></Link>
+              <Link to='/wormseye'><img src={WormsEyeViewPic} className='proj-img' /></Link>
             </div>
             <div className='projects-list-item'>
-              <Link to='treehouse'><img src={THG} className='proj-img'/></Link>
+              <Link to='/treehouse'><img src={THG} className='proj-img'/></Link>
             </div>
           </div>
         </div>
